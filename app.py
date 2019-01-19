@@ -13,6 +13,7 @@ def analyze():
 
     l = ['Dog','Poo','Shampoo']
     response = {'result': random.choice(l)}
+    response.headers.add('Access-Control-Allow-Origin', '*')
     return jsonify(response)
 
 if __name__ == ('__main__'):
