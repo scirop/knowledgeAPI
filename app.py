@@ -13,7 +13,7 @@ def index():
 @app.route('/episteme', methods=['GET','POST'])
 def analyze():
 
-    l = ['Dog','Poo','Shampoo']
+    l = ['You a bitch']
     response = {'result': random.choice(l)}
     return jsonify(response)
 
