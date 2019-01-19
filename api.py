@@ -1,0 +1,14 @@
+from flask import Flask, jsonify
+import random
+
+app = Flask(__name__)
+
+@app.route('/episteme', methods=['GET','POST'])
+def analyze():
+
+    l = ['Dog','Poo','Shampoo']
+    response = {'result': random.choice(l)}
+    return jsonify(response)
+
+if __name__ == ('__main__'):
+    app.run()
